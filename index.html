@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eyob Desalegn Portfolio Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script
+            src="https://kit.fontawesome.com/82058a2b2f.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav__list">
+                    <li class="nav__item logo">
+                        <a class="nav__link" href="#home">&lt;Eyob /&gt;</a>
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            class="nav__link nav__link__hidden"
+                            href="#projects.html"
+                            >Projects</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            class="nav__link nav__link__hidden"
+                            href="#my-services"
+                            >Services</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="aboutme.html">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link nav__link__hidden" href="#contact"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github-square"></i>
+        <div class="cursor"></div>
+        <main>
+            <section class="intro" id="home">
+                <h1 class="section__header">
+                    Eyob <span class="section__header__light">Desalegn</span>
+                </h1>
+                <p class="section__subtitle">hello I'm a frontend developer</p>
+                <p class="section__subtitle">Welcome to my Website</p>
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">github</a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">linkdin</a>
+                    </li>
+                    <li class="social-list__item">
+                        <a href="" class="social-list__link">email</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="my-services" id="my-services">
+                <h2 class="section__header section__header__service">
+                    What I Do
+                </h2>
+                <div class="service">
+                    <h3 class="service__title">Frontend Developer</h3>
+                    <p class="service__subtitle">
+                        Dynamic and Interactive Websites With expertise in HTML,
+                        CSS and JavaScript, I develop dynamic and interactive
+                        web applications using modern frameworks and libraries
+                        such as React and Tailwind. From simple animations to
+                        complex functionalities, I bring your website to life
+                        with engaging features that captivate users.
+                    </p>
+                </div>
+            </section>
+            <section class="projects">
+                <h2 class="section__header section__header__light">My work</h2>
+                <div class="portfolio">
+                    <a href="" class="portfolio__link">
+                        <img class="portfolio__image" src="" alt="project1" />
+                    </a>
+                    <a href="" class="portfolio__link">
+                        <img class="portfolio__image" src="" alt="project2" />
+                    </a>
+                    <a href="" class="portfolio__link">
+                        <img class="portfolio__image" src="" alt="project3" />
+                    </a>
+                    <a href="" class="portfolio__link">
+                        <img class="portfolio__image" src="" alt="project4" />
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contact">
+                <p class="section__subtitle">
+                    If you like what I do, don't hesitate to contact me, let's
+                    start a project together!
+                </p>
+                <a
+                    href="mailto:eyobdesalegnworku@gmail.com"
+                    class="footer__link"
+                >
+                    eyobdesalegnworku@gmail.com
+                </a>
+                <p class="section__subtitle">Addis Ababa, Ethiopia</p>
+            </div>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="" class="social-list__link">github</a>
+                </li>
+                <li class="social-list__item">
+                    <a href="" class="social-list__link">linkdin</a>
+                </li>
+                <li class="social-list__item">
+                    <a href="" class="social-list__link">email</a>
+                </li>
+            </ul>
+        </footer>
+        <script>
+            const cursor = document.querySelector(".cursor");
+            const links = document.querySelectorAll("a");
+
+            document.addEventListener("mousemove", (e) => {
+                cursor.setAttribute(
+                    "style",
+                    `top: ${e.pageY - 10}px; left: ${e.pageX - 10}px;`
+                );
+            });
+
+            links.forEach((link) => {
+                link.addEventListener("mouseover", () => {
+                    cursor.classList.add("expand", "cursor-pointer");
+                });
+
+                link.addEventListener("mouseleave", () => {
+                    cursor.classList.remove("expand", "cursor-pointer");
+                });
+            });
+        </script>
+    </body>
+</html>
