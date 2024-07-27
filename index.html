@@ -1,149 +1,451 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eyob Desalegn Portfolio Website</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script
-            src="https://kit.fontawesome.com/82058a2b2f.js"
-            crossorigin="anonymous"
-        ></script>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="nav__list">
-                    <li class="nav__item logo">
-                        <a class="nav__link" href="#home">&lt;Eyob /&gt;</a>
-                    </li>
-                    <li class="nav__item">
-                        <a
-                            class="nav__link nav__link__hidden"
-                            href="#projects.html"
-                            >Projects</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a
-                            class="nav__link nav__link__hidden"
-                            href="#my-services"
-                            >Services</a
-                        >
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="aboutme.html">About me</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link nav__link__hidden" href="#contact"
-                            >Contact</a
-                        >
-                    </li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eyob Desalegn Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playwrite BE VLG"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Kumar One Outline"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Plus Jakarta Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Maitree"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/82058a2b2f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__item logo">
+            <a class="nav__link" href="#home">&lt;Eyob /&gt;</a>
+          </li>
+
+          <li class="nav__item">
+            <a class="nav__link nav__link__hidden" href="#my-services"
+              >Services</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link__hidden" href="#projects.html"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about-me">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link__hidden" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="cursor"></div>
+    <main>
+      <section class="intro" id="home">
+        <div class="intro__description">
+          <p class="section__subtitle">
+            Hello I'm a <br />
+            frontend developer
+          </p>
+          <p class="section__subtitle section__subtitle__welcome">
+            Welcome to my Website
+          </p>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a
+                target="_blank"
+                href="www.linkedin.com/in/eyob-desalegn-worku-9691b1284"
+                class="social-list__link"
+              >
+                <i class="fab fa-linkedin social-list__icons"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                target="_blank"
+                href="https://github.com/eyob543"
+                class="social-list__link"
+              >
+                <i class="fab fa-github-square social-list__icons"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <h1 class="section__header">
+          Eyob <span class="section__header__light">Desalegn</span>
+        </h1>
+      </section>
+
+      <!--my services section-->
+
+      <section class="my-services" id="my-services">
+        <h2 class="section__header section__header__service">What I Do</h2>
+        <div class="service">
+          <p class="section__subtitle service__description">
+            I develop dynamic and interactive websites with expertise in HTML,
+            CSS and JavaScript. I build web applications using modern frameworks
+            and libraries such as React JS and Tailwind CSS. From simple
+            animations to complex functionalities, I bring your website to life
+            with engaging features that captivate users.
+          </p>
+          <h3 class="section__sub_header__service">Frontend Developer</h3>
+        </div>
+      </section>
+
+      <!--projects section-->
+
+      <section class="projects">
+        <h2 class="section__header section__header__projects">My work</h2>
+        <div class="portfolio">
+          <div class="portfolio__item">
+            <img
+              src="images/socialApp.jpg"
+              class="portfolio__image"
+              alt="social media app"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Social media app</h1>
+              <p class="portfolio__description section__subtitle">
+                The app allows user to post both photos and videos, like and
+                comment on users posts with features such as login, delete,
+                follow and unfollow users
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>React</li>
+                  <li>Tailwind</li>
+                  <li>Firebase</li>
                 </ul>
-            </nav>
-        </header>
-        <i class="fab fa-linkedin"></i>
-        <i class="fab fa-github-square"></i>
-        <div class="cursor"></div>
-        <main>
-            <section class="intro" id="home">
-                <h1 class="section__header">
-                    Eyob <span class="section__header__light">Desalegn</span>
-                </h1>
-                <p class="section__subtitle">hello I'm a frontend developer</p>
-                <p class="section__subtitle">Welcome to my Website</p>
-                <ul class="social-list">
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link">github</a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link">linkdin</a>
-                    </li>
-                    <li class="social-list__item">
-                        <a href="" class="social-list__link">email</a>
-                    </li>
-                </ul>
-            </section>
-            <section class="my-services" id="my-services">
-                <h2 class="section__header section__header__service">
-                    What I Do
-                </h2>
-                <div class="service">
-                    <h3 class="service__title">Frontend Developer</h3>
-                    <p class="service__subtitle">
-                        Dynamic and Interactive Websites With expertise in HTML,
-                        CSS and JavaScript, I develop dynamic and interactive
-                        web applications using modern frameworks and libraries
-                        such as React and Tailwind. From simple animations to
-                        complex functionalities, I bring your website to life
-                        with engaging features that captivate users.
-                    </p>
-                </div>
-            </section>
-            <section class="projects">
-                <h2 class="section__header section__header__light">My work</h2>
-                <div class="portfolio">
-                    <a href="" class="portfolio__link">
-                        <img class="portfolio__image" src="" alt="project1" />
-                    </a>
-                    <a href="" class="portfolio__link">
-                        <img class="portfolio__image" src="" alt="project2" />
-                    </a>
-                    <a href="" class="portfolio__link">
-                        <img class="portfolio__image" src="" alt="project3" />
-                    </a>
-                    <a href="" class="portfolio__link">
-                        <img class="portfolio__image" src="" alt="project4" />
-                    </a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="contact">
-                <p class="section__subtitle">
-                    If you like what I do, don't hesitate to contact me, let's
-                    start a project together!
-                </p>
+              </div>
+              <div class="portfolio__links">
                 <a
-                    href="mailto:eyobdesalegnworku@gmail.com"
-                    class="footer__link"
+                  target="_blank"
+                  href="https://github.com/eyob543/socialMedia"
+                  class="portfolio__link"
+                  >Github</a
                 >
-                    eyobdesalegnworku@gmail.com
-                </a>
-                <p class="section__subtitle">Addis Ababa, Ethiopia</p>
+                <a
+                  target="_blank"
+                  href="https://marvelous-parfait-e05e0e.netlify.app/"
+                  class="portfolio__link"
+                  >Link</a
+                >
+              </div>
             </div>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a href="" class="social-list__link">github</a>
-                </li>
-                <li class="social-list__item">
-                    <a href="" class="social-list__link">linkdin</a>
-                </li>
-                <li class="social-list__item">
-                    <a href="" class="social-list__link">email</a>
-                </li>
-            </ul>
-        </footer>
-        <script>
-            const cursor = document.querySelector(".cursor");
-            const links = document.querySelectorAll("a");
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image"
+              src="images/blog.jpg"
+              alt="Blog app"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Blog app</h1>
+              <p class="portfolio__description">
+                The app allows users to post their own blogs as well as read
+                others blogs with features such as login, sign in and deleting
+                ones post.
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>React</li>
+                  <li>Tailwind</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/eyob543/blog"
+                  class="portfolio__link"
+                  >Github</a
+                >
+                <a
+                  target="_blank"
+                  href="https://fancy-sprinkles-31f0e7.netlify.app/"
+                  class="portfolio__link"
+                  >Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image"
+              src="images/harrypotter.jpg"
+              alt="Harry potter fan page"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Harry Potter fan page</h1>
+              <p class="portfolio__description">
+                As Harry Potter fan I decided to build a fan page that has all
+                the information of all the movies, books, characters, spells and
+                potions which can be filtered.
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>React</li>
+                  <li>Rest api</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/eyob543/Harry-potter"
+                  class="portfolio__link"
+                  >Github</a
+                >
+                <a
+                  target="_blank"
+                  href="https://luxury-tulumba-97157e.netlify.app/"
+                  class="portfolio__link"
+                  >Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image"
+              src="images/nuclear.jpg"
+              alt="Nuclear awareness in africa"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Nuclear awareness in africa app</h1>
+              <p class="portfolio__description">
+                A site that was used in a hackaton with the purpose of informing
+                people about nuclear use in africa specifically in Ethiopia. And
+                test that what the user learned with a quiz at the end of the
+                page.
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>React</li>
+                  <li>Tailwind</li>
+                  <li>Material UI</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/eyob543/Nuclear/tree/main/src"
+                  class="portfolio__link"
+                  >Github</a
+                >
+                <a
+                  target="_blank"
+                  href="https://tangerine-puffpuff-9c37da.netlify.app/"
+                  class="portfolio__link"
+                  >Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image"
+              src="images/hospital.jpg"
+              alt="hospital management app"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Hospital management app</h1>
+              <p class="portfolio__description">
+                Used to book doctor apointements for patients. For doctors and
+                nurses to check thier patients medical history and for
+                administrators to manage their staff
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a target="_blank" href="" class="portfolio__link">Github</a>
+                <a target="_blank" href="" class="portfolio__link">Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image"
+              src="images/recipe finder.jpg"
+              alt="recipe finder app"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Recipe finder app</h1>
+              <p class="portfolio__description">
+                Users can find recipes and filter based on what they want.
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>React</li>
+                  <li>Rest api</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a target="_blank" href="" class="portfolio__link">Github</a>
+                <a target="_blank" href="" class="portfolio__link">Link</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image"
+              src="images/weather.jpg"
+              alt="weather app"
+            />
+            <div class="portfolio__item__text">
+              <h1 class="portfolio__header">Weather app</h1>
+              <p class="portfolio__description">
+                Gives city based weather and users can search different places
+                based on cities.
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>React</li>
+                  <li>Rest api</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a
+                  target="_blank"
+                  href="https://github.com/eyob543/weatherApp/tree/main/src"
+                  class="portfolio__link"
+                  >Github</a
+                >
+                <a
+                  target="_blank"
+                  href="https://tubular-florentine-c80916.netlify.app/"
+                  class="portfolio__link"
+                  >Link</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item">
+            <img
+              class="portfolio__image portfolio__image__todo"
+              src="images/todo.jpg"
+              alt="todo list with firebase"
+            />
+            <div class="portfolio__item__text portfolio__item__todo__list">
+              <h1 class="portfolio__header">Todo list app</h1>
+              <p class="portfolio__description">
+                Users can login and write what they want to do and they can
+                check them done or delete them.
+              </p>
+              <div class="portfolio__materials">
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+              <div class="portfolio__links">
+                <a
+                  href="https://github.com/eyob543/Add-cart/blob/main/index.js"
+                  class="portfolio__link"
+                  >Github
+                </a>
+                <a
+                  href="https://add-to-cart-ey.netlify.app/"
+                  target="_blank"
+                  class="portfolio__link"
+                  >Link</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            document.addEventListener("mousemove", (e) => {
-                cursor.setAttribute(
-                    "style",
-                    `top: ${e.pageY - 10}px; left: ${e.pageX - 10}px;`
-                );
-            });
+      <!--about me section-->
 
-            links.forEach((link) => {
-                link.addEventListener("mouseover", () => {
-                    cursor.classList.add("expand", "cursor-pointer");
-                });
+      <section id="about-me">
+        <h1 class="section__header">About me</h1>
+        <p class="section__subtitle">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate
+          aspernatur adipisci nulla suscipit aut ratione praesentium ut nemo
+          quod pariatur obcaecati voluptatum tenetur, vel sit eligendi, at
+          temporibus iure modi quam excepturi impedit, ducimus repudiandae?
+          Commodi a quas in magni molestias dolorum est? Eligendi dolores magni
+          modi voluptate hic harum.
+        </p>
+      </section>
+    </main>
+    <footer id="contact">
+      <section class="contact">
+        <p class="section__subtitle">
+          If you like what I do, don't hesitate to contact me, <br />let's start
+          a project together!
+        </p>
+        <a
+          href="mailto:eyobdesalegnworku@gmail.com"
+          class="section__subtitle footer__link"
+        >
+          eyobdesalegnworku@gmail.com
+        </a>
+        <p class="section__subtitle">Addis Ababa, Ethiopia</p>
+      </section>
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            target="_blank"
+            href="www.linkedin.com/in/eyob-desalegn-worku-9691b1284"
+            class="social-list__link"
+          >
+            <i class="fab fa-linkedin social-list__icons"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            target="_blank"
+            href="https://github.com/eyob543"
+            class="social-list__link"
+          >
+            <i class="fab fa-github-square social-list__icons"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <script>
+      const cursor = document.querySelector(".cursor");
+      const links = document.querySelectorAll("a");
 
-                link.addEventListener("mouseleave", () => {
-                    cursor.classList.remove("expand", "cursor-pointer");
-                });
-            });
-        </script>
-    </body>
+      document.addEventListener("mousemove", (e) => {
+        cursor.setAttribute(
+          "style",
+          `top: ${e.pageY - 10}px; left: ${e.pageX - 10}px;`,
+        );
+      });
+
+      links.forEach((link) => {
+        link.addEventListener("mouseover", () => {
+          cursor.classList.add("expand", "cursor-pointer");
+        });
+
+        link.addEventListener("mouseleave", () => {
+          cursor.classList.remove("expand", "cursor-pointer");
+        });
+      });
+    </script>
+  </body>
 </html>
