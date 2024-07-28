@@ -250,6 +250,7 @@ a {
 }
 
 .portfolio__item__text {
+  padding: 1em;
   line-height: 1.3em;
   display: flex;
   flex-direction: column;
