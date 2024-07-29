@@ -270,6 +270,7 @@ a {
   margin-top: 2em;
 }
 .portfolio__header {
+  padding-left: 1em;
   margin-top: 1em;
   position: relative;
   width: max-content;
